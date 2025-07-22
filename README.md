@@ -8,12 +8,12 @@ Implementar um novo modelo e testar a funcionalidade do LightAPI framework. Esta
 ### 1. Setup Inicial (5 min)
 - Fork do repositório: https://github.com/iklobato/LightAPI
 - Clone seu fork localmente
-- Instale as dependências: `pip install -r requirements.txt` (ou `pip install lightapi`)
+- Instale as dependências
 
 ### 2. Implementação (20 min)
 
 #### Criar um novo modelo `Product`
-No diretório do projeto, crie um arquivo `product_api.py` com um modelo SQLAlchemy chamado `Product` que contenha os seguintes campos:
+No diretório do projeto, crie um arquivo com um modelo SQLAlchemy chamado `Product` que contenha os seguintes campos:
 
 - `id` - chave primária (integer)
 - `name` - nome do produto (string, máximo 100 caracteres, obrigatório)
@@ -21,7 +21,7 @@ No diretório do projeto, crie um arquivo `product_api.py` com um modelo SQLAlch
 - `price` - preço (float, obrigatório)
 - `created_at` - data de criação (datetime, com valor padrão)
 
-Configure o LightAPI para registrar este modelo e executar na porta 8080.
+Configure o LightAPI para registrar este modelo e executar na porta 8080, leia o README do projeto.
 
 #### Adicionar validação customizada
 Implemente uma validação que garanta que o preço seja sempre maior que 0. Se o preço for inválido, deve retornar erro apropriado.
